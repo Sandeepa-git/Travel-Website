@@ -1,45 +1,38 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUp } from "lucide-react";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Top: 0 takes us all the way back to the top of the page
-  // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
-    // Button is displayed after scrolling for 500 pixels
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 300);
     };
-
-    window.addEventListener("scroll", toggleVisibility);
-
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   return (
-    <div className="fixed bottom-8 right-8 z-[999]">
+    <AnimatePresence>
       {isVisible && (
-        <div
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.8, y: 20 }}
           onClick={scrollToTop}
-          aria-label="scroll to top"
-          className="back-to-top flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+          aria-label="Scroll to top of page"
+          className="fixed bottom-6 right-6 z-[50] lg:bottom-8 lg:right-8 w-12 h-12 bg-accent text-primary rounded-full flex items-center justify-center shadow-xl hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer min-w-[44px] min-h-[44px]"
         >
-          <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-        </div>
+          <ArrowUp size={20} />
+        </motion.button>
       )}
-    </div>
+    </AnimatePresence>
   );
 }

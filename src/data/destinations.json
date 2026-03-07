@@ -1,0 +1,68 @@
+[
+  {
+    "id": "bali-indonesia",
+    "slug": "bali-indonesia",
+    "name": "Bali",
+    "country": "Indonesia",
+    "description": "Experience the magic of the Island of Gods with its lush rice terraces and stunning beaches.",
+    "image": "/images/destinations/bali.jpg",
+    "rating": 4.8,
+    "region": "Asia",
+    "activities": ["Beach", "Culture", "Relaxation"]
+  },
+  {
+    "id": "santorini-greece",
+    "slug": "santorini-greece",
+    "name": "Santorini",
+    "country": "Greece",
+    "description": "Iconic white buildings overlooking the deep blue Aegean Sea. A romantic paradise.",
+    "image": "/images/destinations/santorini.jpg",
+    "rating": 4.9,
+    "region": "Europe",
+    "activities": ["Romance", "Sunset", "Gastronomy"]
+  },
+  {
+    "id": "kyoto-japan",
+    "slug": "kyoto-japan",
+    "name": "Kyoto",
+    "country": "Japan",
+    "description": "Step back in time through historic temples, traditional tea houses, and serene gardens.",
+    "image": "/images/destinations/kyoto.jpg",
+    "rating": 4.7,
+    "region": "Asia",
+    "activities": ["History", "Culture", "Temple"]
+  },
+  {
+    "id": "swiss-alps",
+    "slug": "swiss-alps",
+    "name": "Swiss Alps",
+    "country": "Switzerland",
+    "description": "Breathtaking mountain peaks, crystal clear lakes, and luxury alpine resorts.",
+    "image": "/images/destinations/swiss-alps.jpg",
+    "rating": 4.9,
+    "region": "Europe",
+    "activities": ["Mountain", "Skiing", "Nature"]
+  },
+  {
+    "id": "marrakech-morocco",
+    "slug": "marrakech-morocco",
+    "name": "Marrakech",
+    "country": "Morocco",
+    "description": "Uncover the magic of the Medina, with its vibrant souks, ornate palaces, and hidden gardens.",
+    "image": "/images/destinations/bali.jpg",
+    "rating": 4.6,
+    "region": "Africa",
+    "activities": ["Culture", "Bazaar", "Architecture"]
+  },
+  {
+    "id": "queenstown-nz",
+    "slug": "queenstown-nz",
+    "name": "Queenstown",
+    "country": "New Zealand",
+    "description": "The world's adventure capital, offering stunning alpine scenery and adrenaline-pumping activities.",
+    "image": "/images/destinations/swiss-alps.jpg",
+    "rating": 4.9,
+    "region": "Oceania",
+    "activities": ["Adventure", "Scenery", "Nature"]
+  }
+]

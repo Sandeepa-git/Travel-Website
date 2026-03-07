@@ -1,0 +1,82 @@
+[
+  {
+    "id": "tropical-escape-bali",
+    "slug": "tropical-escape-bali",
+    "name": "7-Day Tropical Escape in Bali",
+    "description": "A complete tour of Bali's most famous spots including Ubud, Canggu, and Uluwatu. Experience culture and relaxation.",
+    "duration": "7 Days / 6 Nights",
+    "price": 1299,
+    "image": "/images/packages/bali-package.jpg",
+    "highlights": ["Ubud Sacred Monkey Forest", "Tegallalang Rice Terrace", "Uluwatu Temple Sunset", "Nusa Penida Boat Trip"],
+    "gallery": ["/images/packages/bali-package.jpg", "/images/packages/bali-package.jpg", "/images/packages/bali-package.jpg"],
+    "rating": 4.9,
+    "itinerary": [
+      {"day": 1, "activity": "Arrival in Bali & Check-in at Ubud"},
+      {"day": 2, "activity": "Guided Tour of Ubud Rice Terraces"},
+      {"day": 3, "activity": "Sacred Monkey Forest & Local Cuisine"},
+      {"day": 4, "activity": "Sunset Temple Visit at Uluwatu"},
+      {"day": 5, "activity": "Island Boat Trip to Nusa Penida"},
+      {"day": 6, "activity": "Free Day for Shopping & Leisure in Canggu"},
+      {"day": 7, "activity": "Departure from Bali"}
+    ],
+    "inclusions": ["5-Star Hotel Accommodations", "Daily Breakfast & Select Lunches", "Private Airport Transfers", "Professional Local Guides"],
+    "faqs": [
+      {"q": "What's the best time to visit?", "a": "May to September is the dry season and ideal for Bali."},
+      {"q": "Is insurance included?", "a": "Travel insurance is not included and highly recommended."}
+    ],
+    "isBestSeller": true
+  },
+  {
+    "id": "greek-islands-odyssey",
+    "slug": "greek-islands-odyssey",
+    "name": "10-Day Greek Islands Odyssey",
+    "description": "Explore the ancient history of Athens followed by the stunning beauty of Mykonos and Santorini.",
+    "duration": "10 Days / 9 Nights",
+    "price": 2499,
+    "image": "/images/packages/greece-package.jpg",
+    "highlights": ["Acropolis Guided Tour", "Sunset in Oia (Santorini)", "Mykonos Beach Clubs", "Traditional Island Dinner"],
+    "gallery": ["/images/packages/greece-package.jpg", "/images/packages/greece-package.jpg", "/images/packages/greece-package.jpg"],
+    "rating": 4.8,
+    "itinerary": [
+      {"day": 1, "activity": "Arrival in Athens"},
+      {"day": 2, "activity": "Athens City & Acropolis Tour"},
+      {"day": 3, "activity": "Ferry to Mykonos"},
+      {"day": 4, "activity": "Beach Club Relaxation in Mykonos"},
+      {"day": 5, "activity": "Ferry to Santorini"},
+      {"day": 6, "activity": "Wine Tasting in Santorini"},
+      {"day": 7, "activity": "Oia Village Sunset"},
+      {"day": 8, "activity": "Boat Trip in the Aegean"},
+      {"day": 9, "activity": "Local Cooking Class"},
+      {"day": 10, "activity": "Departure"}
+    ],
+    "inclusions": ["Boutique Island Accommodations", "Ferry Transfer Tickets", "Select Gourmet Dinners", "Professional History Guides"],
+    "isNew": true
+  },
+  {
+    "id": "japanese-cultural-tour",
+    "slug": "japanese-cultural-tour",
+    "name": "12-Day Japanese Cultural Immersion",
+    "description": "Experience the contrast of ultra-modern Tokyo and the traditional soul of Kyoto and Osaka.",
+    "duration": "12 Days / 11 Nights",
+    "price": 3899,
+    "image": "/images/packages/japan-package.jpg",
+    "highlights": ["Shinkansen Bullet Train", "Tea Ceremony in Kyoto", "Mount Fuji View", "Tokyo Shibuya Crossing"],
+    "gallery": ["/images/packages/japan-package.jpg", "/images/packages/japan-package.jpg", "/images/packages/japan-package.jpg"],
+    "rating": 5.0,
+    "itinerary": [
+      {"day": 1, "activity": "Arrival in Tokyo"},
+      {"day": 2, "activity": "Asakusa & Shinjuku Tour"},
+      {"day": 3, "activity": "Day Trip to Mt. Fuji"},
+      {"day": 4, "activity": "Shinkansen to Kyoto"},
+      {"day": 5, "activity": "Bamboo Grove & Golden Pavilion"},
+      {"day": 6, "activity": "Traditional Tea Ceremony"},
+      {"day": 7, "activity": "Nara Deer Park Visit"},
+      {"day": 8, "activity": "Local Market Street Food Tour"},
+      {"day": 9, "activity": "Fushimi Inari-taisha Shrine"},
+      {"day": 10, "activity": "Osaka Day Trip & Dotonbori"},
+      {"day": 11, "activity": "Free Day in Kyoto"},
+      {"day": 12, "activity": "Departure from Osaka"}
+    ],
+    "inclusions": ["Luxury Ryokan Experience", "JR Pass (7 days)", "Special Tea Ceremony Access", "Multi-lingual Cultural Guides"]
+  }
+]

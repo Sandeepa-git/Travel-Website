@@ -1,99 +1,43 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const CallToAction = () => {
   return (
-    <section className="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]">
-      <div className="container mx-auto">
-        <div className="relative overflow-hidden">
-          <div className="-mx-4 flex flex-wrap items-stretch">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[570px] text-center">
-                <h2 className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
-                  <span>What Are You Looking For?</span>
-                  <span className="text-3xl font-normal md:text-[40px]">
-                    {" "}
-                    Get Started Now{" "}
-                  </span>
-                </h2>
-                <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
-                  There are many variations of passages of Lorem Ipsum but the
-                  majority have suffered in some form.
-                </p>
-                <Link
-                  href="/"
-                  className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
-                >
-                  Start using Play
-                </Link>
-              </div>
-            </div>
+    <section className="py-24 bg-white dark:bg-travel-dark overflow-hidden relative mesh-gradient">
+      <div className="absolute right-[-10%] top-[-10%] w-[400px] h-[400px] bg-accent/10 rounded-full blur-[100px]" />
+      <div className="absolute left-[-5%] bottom-[-10%] w-[300px] h-[300px] bg-nature-green/10 rounded-full blur-[80px]" />
+
+      <div className="container mx-auto px-6 relative z-10 max-w-[1400px]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="rounded-[32px] bg-gradient-to-br from-primary via-primary to-primary/90 p-10 text-center text-white shadow-2xl md:p-16 lg:p-20 md:text-left md:flex md:items-center md:justify-between gap-12 relative overflow-hidden"
+        >
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-accent/10 rounded-full blur-[60px]" />
+          <div className="absolute bottom-0 left-0 w-[200px] h-[200px] bg-warm/10 rounded-full blur-[40px]" />
+
+          <div className="max-w-2xl relative z-10">
+            <h2 className="text-section mb-6 font-extrabold leading-tight text-white">
+              Ready to Discover Your Next Destination?
+            </h2>
+            <p className="mb-8 text-base md:text-lg text-white/80 leading-relaxed">
+              Join thousands of happy travelers and let us help you create memories that last forever. Explore our most popular adventure and cultural tours.
+            </p>
           </div>
-        </div>
-      </div>
-      <div>
-        <span className="absolute left-0 top-0">
-          <svg
-            width="495"
-            height="470"
-            viewBox="0 0 495 470"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="55"
-              cy="442"
-              r="138"
-              stroke="white"
-              strokeOpacity="0.04"
-              strokeWidth="50"
-            />
-            <circle
-              cx="446"
-              r="39"
-              stroke="white"
-              strokeOpacity="0.04"
-              strokeWidth="20"
-            />
-            <path
-              d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z"
-              stroke="white"
-              strokeOpacity="0.08"
-              strokeWidth="12"
-            />
-          </svg>
-        </span>
-        <span className="absolute bottom-0 right-0">
-          <svg
-            width="493"
-            height="470"
-            viewBox="0 0 493 470"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="462"
-              cy="5"
-              r="138"
-              stroke="white"
-              strokeOpacity="0.04"
-              strokeWidth="50"
-            />
-            <circle
-              cx="49"
-              cy="470"
-              r="39"
-              stroke="white"
-              strokeOpacity="0.04"
-              strokeWidth="20"
-            />
-            <path
-              d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z"
-              stroke="white"
-              strokeOpacity="0.06"
-              strokeWidth="13"
-            />
-          </svg>
-        </span>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start relative z-10 shrink-0">
+            <Link href="/tour-packages" className="btn-primary text-base px-8 py-4">
+              Start Planning
+            </Link>
+            <Link href="/contact" className="btn-secondary text-base px-8 py-4">
+              Contact Us
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
