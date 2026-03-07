@@ -8,7 +8,7 @@
     "price": 1299,
     "image": "/images/packages/bali-package.jpg",
     "highlights": ["Ubud Sacred Monkey Forest", "Tegallalang Rice Terrace", "Uluwatu Temple Sunset", "Nusa Penida Boat Trip"],
-    "gallery": ["/images/packages/bali-package.jpg", "/images/packages/bali-package.jpg", "/images/packages/bali-package.jpg"],
+    "gallery": ["/images/packages/bali-package.jpg", "/images/packages/bali-gallery-1.jpg", "/images/packages/bali-gallery-2.jpg"],
     "rating": 4.9,
     "itinerary": [
       {"day": 1, "activity": "Arrival in Bali & Check-in at Ubud"},
@@ -35,7 +35,7 @@
     "price": 2499,
     "image": "/images/packages/greece-package.jpg",
     "highlights": ["Acropolis Guided Tour", "Sunset in Oia (Santorini)", "Mykonos Beach Clubs", "Traditional Island Dinner"],
-    "gallery": ["/images/packages/greece-package.jpg", "/images/packages/greece-package.jpg", "/images/packages/greece-package.jpg"],
+    "gallery": ["/images/packages/greece-package.jpg", "/images/packages/greece-gallery-1.jpg", "/images/packages/greece-gallery-2.jpg"],
     "rating": 4.8,
     "itinerary": [
       {"day": 1, "activity": "Arrival in Athens"},
@@ -61,7 +61,7 @@
     "price": 3899,
     "image": "/images/packages/japan-package.jpg",
     "highlights": ["Shinkansen Bullet Train", "Tea Ceremony in Kyoto", "Mount Fuji View", "Tokyo Shibuya Crossing"],
-    "gallery": ["/images/packages/japan-package.jpg", "/images/packages/japan-package.jpg", "/images/packages/japan-package.jpg"],
+    "gallery": ["/images/packages/japan-package.jpg", "/images/packages/japan-gallery-1.jpg", "/images/packages/japan-gallery-2.jpg"],
     "rating": 5.0,
     "itinerary": [
       {"day": 1, "activity": "Arrival in Tokyo"},
