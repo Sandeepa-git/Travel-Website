@@ -58,15 +58,6 @@ export const metadata: Metadata = {
     siteName: 'Wanderlust Travel',
     title: 'Wanderlust | Luxury Travel & Tour Packages',
     description: 'Discover handpicked destinations and luxury tours. Book your dream trip today.',
-    images: [
-      {
-        url: '/og-image.jpg',         // 1200x630px image in /public
-        width: 1200,
-        height: 630,
-        alt: 'Wanderlust Travel — Explore the World',
-        type: 'image/jpeg',
-      }
-    ],
   },
 
   // ── TWITTER / X CARD ──────────────────────────────
@@ -76,7 +67,6 @@ export const metadata: Metadata = {
     creator: '@WanderlustTravel',
     title: 'Wanderlust | Luxury Travel & Tour Packages',
     description: 'Handpicked destinations & luxury tour packages worldwide.',
-    images: ['/twitter-image.jpg'],   // 1200x600px image in /public
   },
 
   // ── ROBOTS ────────────────────────────────────────
@@ -97,10 +87,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico' },
-      { url: '/icon-16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
     ],
-    apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
     shortcut: '/favicon.ico',
   },
   manifest: '/site.webmanifest',
