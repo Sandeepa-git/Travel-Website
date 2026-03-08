@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { destinations } from "@/data/travel";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import { Search, SlidersHorizontal, X } from "lucide-react";
@@ -65,10 +66,13 @@ const DestCard = memo(function DestCard({ dest, index }: { dest: typeof destinat
         <p className="text-sm text-muted dark:text-gray-400 mb-4 leading-relaxed flex-1">
           {dest.description}
         </p>
-        <button className="text-accent font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all min-h-[44px]">
+        <Link 
+          href={`/destinations/${dest.id}`}
+          className="text-accent font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all min-h-[44px]"
+        >
           View Adventure Details
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
-        </button>
+        </Link>
       </div>
     </motion.div>
   );

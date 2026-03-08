@@ -4,6 +4,9 @@ export interface Destination {
   description: string;
   image: string;
   rating?: number;
+  longDescription?: string;
+  highlights?: string[];
+  gallery?: string[];
 }
 
 export interface TourPackage {
@@ -22,29 +25,41 @@ export const destinations: Destination[] = [
     id: "bali-indonesia",
     name: "Bali, Indonesia",
     description: "Experience the magic of the Island of Gods with its lush rice terraces and stunning beaches.",
+    longDescription: "Bali is a living postcard, an Indonesian paradise that feels like a fantasy. Soak up the sun on a stretch of fine white sand, or commune with the tropical creatures as you dive along coral ridges or the colorful wreck of a WWII warship. Onshore, the lush jungle shelters stone temples and mischievous monkeys. The 'cultural capital' of Ubud is the perfect place to see a cultural dance performance, take a batik or silver-smithing workshop, or invigorate your mind and body in a yoga class.",
     image: "/images/destinations/bali.jpg",
-    rating: 4.8
+    rating: 4.8,
+    highlights: ["Ubud Rice Terraces", "Uluwatu Temple", "Seminyak Beaches", "Scuba Diving in Tulamben"],
+    gallery: ["/images/destinations/bali.jpg", "/images/destinations/bali.jpg", "/images/destinations/bali.jpg"]
   },
   {
     id: "santorini-greece",
     name: "Santorini, Greece",
     description: "Iconic white buildings overlooking the deep blue Aegean Sea. A romantic paradise.",
+    longDescription: "Even if you’ve never been to this Cyclades island in the Aegean Sea, you’d still recognize it immediately—candy-colored houses carved into cliffs, sapphire-blue waters, gleaming white buildings topped with half-spheres the color of a stormy sky. Santorini is one of the world's most popular travel destinations for a reason: it's incredibly beautiful. Whether you're exploring the ruins of Akrotiri, lounging on a red sand beach, or watching the sunset from Oia, you'll be captivated by its charm.",
     image: "/images/destinations/santorini.jpg",
-    rating: 4.9
+    rating: 4.9,
+    highlights: ["Sunset in Oia", "Fira to Oia Hike", "Red Beach", "Ancient Akrotiri"],
+    gallery: ["/images/destinations/santorini.jpg", "/images/destinations/santorini.jpg", "/images/destinations/santorini.jpg"]
   },
   {
     id: "kyoto-japan",
     name: "Kyoto, Japan",
     description: "Step back in time through historic temples, traditional tea houses, and serene gardens.",
+    longDescription: "Kyoto was the capital of Japan for over a millennium, and it remains the country's cultural and spiritual heart. Home to thousands of Buddhist temples, Shinto shrines, and traditional wooden houses, Kyoto offers a glimpse into Japan's rich history. From the golden Kinkaku-ji temple to the thousands of vermillion torii gates at Fushimi Inari Shrine, every corner of Kyoto tells a story. Don't miss the chance to experience a traditional tea ceremony or walk through the bamboo groves of Arashiyama.",
     image: "/images/destinations/kyoto.jpg",
-    rating: 4.7
+    rating: 4.7,
+    highlights: ["Fushimi Inari Shrine", "Arashiyama Bamboo Grove", "Kinkaku-ji (Golden Pavilion)", "Gion District"],
+    gallery: ["/images/destinations/kyoto.jpg", "/images/destinations/kyoto.jpg", "/images/destinations/kyoto.jpg"]
   },
   {
     id: "swiss-alps",
     name: "Swiss Alps, Switzerland",
     description: "Breathtaking mountain peaks, crystal clear lakes, and luxury alpine resorts.",
+    longDescription: "The Swiss Alps are a playground for outdoor enthusiasts and luxury seekers alike. Whether you're skiing in Zermatt, hiking in the Jungfrau region, or taking a scenic train ride on the Glacier Express, the majesty of the mountains is ever-present. With world-class resorts, charming alpine villages, and some of the most stunning lakes in Europe, the Swiss Alps offer an unforgettable escape from the everyday. Experience the perfect blend of adventure and relaxation in one of the world's most beautiful mountain ranges.",
     image: "/images/destinations/swiss-alps.jpg",
-    rating: 4.9
+    rating: 4.9,
+    highlights: ["Matterhorn Views", "Jungfraujoch Jungfrau-Aletsch", "Lake Lucerne", "Interlaken Adventure"],
+    gallery: ["/images/destinations/swiss-alps.jpg", "/images/destinations/swiss-alps.jpg", "/images/destinations/swiss-alps.jpg"]
   }
 ];
 
