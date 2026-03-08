@@ -4,11 +4,6 @@ Wanderlust is a high-end, responsive travel platform built with **Next.js 14+** 
 
 ---
 
-## 🚀 Live Demo
-
-Check out the live version: [wanderlust-travel.vercel.app](https://wanderlust-travel.vercel.app/)
-
----
 
 ## 🛠️ Technology Stack
 
